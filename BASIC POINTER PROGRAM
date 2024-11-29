@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+  int a = 10;
+  int *p;
+  p=&a;
+  printf("A value:%d\n",a);
+  printf("A address:%d\n",&a);
+  printf("P value:%d\n",p);//* -->DEREFERENCING OPERATOR
+  printf("Dereferencing:%d\n",*p);
+}
