@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int IntVar;
+   int *IntPtr;
+
+    printf("Size of Integer Variable: %d bytes\n", sizeof(IntVar));
+    printf("Size of Integer Pointer: %d bytes\n", sizeof(IntPtr));
+    char CharVar;
+    char *CharPtr;
+    printf("Size of Character Variable: %d bytes\n", sizeof(CharVar));
+    printf("Size of Character pointer: %d bytes\n", sizeof(CharPtr));
+
+   
+}
