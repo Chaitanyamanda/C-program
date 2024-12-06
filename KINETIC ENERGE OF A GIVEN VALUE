@@ -1,0 +1,11 @@
+
+#include <stdio.h>
+int main() {
+    double mass, velocity, kinetic_energy;
+    printf("Enter the mass of the object (in kg):\n");
+    scanf("%lf", &mass);
+    printf("Enter the velocity of the object (in m/s):\n");
+    scanf("%lf", &velocity);
+    kinetic_energy = 0.5 * mass * velocity * velocity;
+    printf("The kinetic energy of the object: %.4lf joules\n", kinetic_energy);
+}
