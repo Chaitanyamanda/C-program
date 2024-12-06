@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+
+#define MAX_NAME_LENGTH 50
+#define MAX_MAJOR_LENGTH 30
+
+struct Student {
+    char name[MAX_NAME_LENGTH];
+    char major[MAX_MAJOR_LENGTH];
+};
+
+int main() {
+    struct Student student1;
+
+    printf("Enter student's name:");
+    fgets(student1.name, MAX_NAME_LENGTH, stdin);
+    student1.name[strcspn(student1.name, "\n")] = 0; 
+
+    printf("Enter student's major: ");
+    fgets(student1.major, MAX_MAJOR_LENGTH, stdin);
+    student1.major[strcspn(student1.major, "\n")] = 0; 
+    printf("\nStudent Name: %s\n", student1.name);
+    printf("Student Major: %s\n", student1.major);
+
+    return 0;
+}
