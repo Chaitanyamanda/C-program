@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+    int num,odd=0,even=0;
+    scanf("%d",&num);//5
+    int i=1;//i=1
+    do{
+      if(i%2==0){
+        even=even+i;//even=6
+        
+      }
+      else{
+        odd=odd+i;//odd=9
+        
+      }
+      i++;//i=6
+    }while(i<=num);//6<=5
+    printf("sum of even numbers upto %d:%d\n",num,even);
+    printf("sum of odd numbers upto %d:%d",num,odd);
+}
