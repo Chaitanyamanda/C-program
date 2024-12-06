@@ -1,0 +1,12 @@
+
+#include <stdio.h>
+int main() {
+    float num1;
+    double num2;
+    printf("Enter a float value:\n");
+    scanf("%f", &num1);
+    printf("Enter a double value:\n");
+    scanf("%lf", &num2);
+    double sum = num1 + num2;
+    printf("Sum of float and double point number = %.6lf\n", sum);
+}
